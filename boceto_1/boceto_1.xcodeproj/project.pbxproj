@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB55AC4B2CA1BFB30028F21C /* ControladoraCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */; };
+		FB55AC4D2CA1BFD80028F21C /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4C2CA1BFD80028F21C /* generador_de_citas.swift */; };
+		FB55AC4F2CA1C16F0028F21C /* cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4E2CA1C16F0028F21C /* cita.swift */; };
+		FB55AC512CA1C1ED0028F21C /* Controlador_pantalla_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */; };
 		FBF092BC2C9DCC9C00D441E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF092BB2C9DCC9C00D441E7 /* AppDelegate.swift */; };
 		FBF092BE2C9DCC9C00D441E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF092BD2C9DCC9C00D441E7 /* SceneDelegate.swift */; };
 		FBF092C02C9DCC9C00D441E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF092BF2C9DCC9C00D441E7 /* ViewController.swift */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladoraCita.swift; sourceTree = "<group>"; };
+		FB55AC4C2CA1BFD80028F21C /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
+		FB55AC4E2CA1C16F0028F21C /* cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cita.swift; sourceTree = "<group>"; };
+		FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador_pantalla_citas.swift; sourceTree = "<group>"; };
 		FBF092B82C9DCC9C00D441E7 /* boceto_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boceto_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBF092BB2C9DCC9C00D441E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FBF092BD2C9DCC9C00D441E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +84,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB55AC472CA1BF2C0028F21C /* controlador */ = {
+			isa = PBXGroup;
+			children = (
+				FB55AC4C2CA1BFD80028F21C /* generador_de_citas.swift */,
+			);
+			path = controlador;
+			sourceTree = "<group>";
+		};
+		FB55AC482CA1BF3C0028F21C /* modelo */ = {
+			isa = PBXGroup;
+			children = (
+				FB55AC4E2CA1C16F0028F21C /* cita.swift */,
+			);
+			path = modelo;
+			sourceTree = "<group>";
+		};
+		FB55AC492CA1BF530028F21C /* controlador_de_vistas */ = {
+			isa = PBXGroup;
+			children = (
+				FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */,
+				FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */,
+			);
+			path = controlador_de_vistas;
+			sourceTree = "<group>";
+		};
 		FBF092AF2C9DCC9C00D441E7 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +132,9 @@
 		FBF092BA2C9DCC9C00D441E7 /* boceto_1 */ = {
 			isa = PBXGroup;
 			children = (
+				FB55AC492CA1BF530028F21C /* controlador_de_vistas */,
+				FB55AC472CA1BF2C0028F21C /* controlador */,
+				FB55AC482CA1BF3C0028F21C /* modelo */,
 				FBF092BB2C9DCC9C00D441E7 /* AppDelegate.swift */,
 				FBF092BD2C9DCC9C00D441E7 /* SceneDelegate.swift */,
 				FBF092BF2C9DCC9C00D441E7 /* ViewController.swift */,
@@ -260,6 +296,10 @@
 			files = (
 				FBF092C02C9DCC9C00D441E7 /* ViewController.swift in Sources */,
 				FBF092BC2C9DCC9C00D441E7 /* AppDelegate.swift in Sources */,
+				FB55AC512CA1C1ED0028F21C /* Controlador_pantalla_citas.swift in Sources */,
+				FB55AC4D2CA1BFD80028F21C /* generador_de_citas.swift in Sources */,
+				FB55AC4B2CA1BFB30028F21C /* ControladoraCita.swift in Sources */,
+				FB55AC4F2CA1C16F0028F21C /* cita.swift in Sources */,
 				FBF092BE2C9DCC9C00D441E7 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
