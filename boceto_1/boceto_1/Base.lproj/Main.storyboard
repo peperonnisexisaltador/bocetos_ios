@@ -47,6 +47,13 @@
                                             <segue destination="jsy-Bq-Se2" kind="show" id="qH0-LR-f2f"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J6s-BW-65I">
+                                        <rect key="frame" x="24" y="427" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                             </view>
@@ -79,6 +86,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="labelcito" destination="J6s-BW-65I" id="HbP-fW-h2O"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -224,12 +234,22 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0pD-q2-khz">
+                                <rect key="frame" x="31" y="9" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="ChY-h0-3CC" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="qxh-e6-GGL"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="RTW-FT-kqy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RiD-TK-0oo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ChY-h0-3CC" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1032.824427480916" y="-46.478873239436624"/>
         </scene>
@@ -345,6 +365,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nV4-Et-YHl">
+                                <rect key="frame" x="24" y="20" width="75" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="0Jz-5g-X5c" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="Fr3-cY-P1Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Fx4-Y8-8aR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -356,33 +385,86 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bjl-Ch-sGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="0Jz-5g-X5c" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="154.96183206106869" y="-673.23943661971839"/>
         </scene>
-        <!--View Controller-->
+        <!--Controlador Pantalla Agregar Citas-->
         <scene sceneID="L3J-bN-PaC">
             <objects>
-                <viewController id="jsy-Bq-Se2" sceneMemberID="viewController">
+                <viewController id="jsy-Bq-Se2" customClass="ControladorPantallaAgregarCitas" customModule="boceto_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kUj-tx-kxR">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFn-dp-Yg4">
-                                <rect key="frame" x="107" y="345" width="179" height="177"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1W-ll-gzO">
+                                <rect key="frame" x="30" y="30" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <segue destination="zN9-W7-ELz" kind="unwind" unwindAction="volver_a_pantalla_inicioWithSegue:" id="gNk-Tg-3mh"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="O1U-Ec-CRm">
+                                <rect key="frame" x="50" y="185" width="292" height="563"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="6GZ-lD-1xz">
+                                        <rect key="frame" x="8" y="8" width="265" height="47"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="UVu-JU-QEe">
+                                        <rect key="frame" x="8" y="115" width="265" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GeM-Vy-QzD">
+                                        <rect key="frame" x="19" y="226" width="265" height="47"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="6GZ-lD-1xz" firstAttribute="leading" secondItem="O1U-Ec-CRm" secondAttribute="leading" id="2px-nQ-XnW"/>
+                                    <constraint firstAttribute="trailing" secondItem="6GZ-lD-1xz" secondAttribute="trailing" id="5sc-SI-ui3"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhs-my-grM">
+                                <rect key="frame" x="138" y="768" width="117" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Agregar cita"/>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zHw-G1-mZ2"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.91976243257522583" green="0.58316452236889038" blue="0.55630638741083305" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="d1W-ll-gzO" firstAttribute="top" secondItem="zHw-G1-mZ2" secondAttribute="top" constant="30" id="H2U-Ca-ZJu"/>
+                            <constraint firstItem="O1U-Ec-CRm" firstAttribute="centerX" secondItem="zHw-G1-mZ2" secondAttribute="centerX" id="RoA-TG-bBe"/>
+                            <constraint firstItem="O1U-Ec-CRm" firstAttribute="centerY" secondItem="zHw-G1-mZ2" secondAttribute="centerY" id="cOV-1u-2Pa"/>
+                            <constraint firstItem="d1W-ll-gzO" firstAttribute="leading" secondItem="zHw-G1-mZ2" secondAttribute="leading" constant="30" id="ha6-Ts-Ii0"/>
+                            <constraint firstItem="Dhs-my-grM" firstAttribute="centerX" secondItem="zHw-G1-mZ2" secondAttribute="centerX" id="sSv-uN-Hw4"/>
+                            <constraint firstItem="Dhs-my-grM" firstAttribute="top" secondItem="O1U-Ec-CRm" secondAttribute="bottom" constant="20" id="smo-jv-qKu"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="sCj-2u-SI7"/>
+                    <connections>
+                        <outlet property="que_es_lo_que_dijo_view" destination="UVu-JU-QEe" id="34i-Fe-Tg0"/>
+                        <outlet property="quien_lo_dijo_view" destination="6GZ-lD-1xz" id="RgN-vn-m7P"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C46-56-mFA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="zN9-W7-ELz" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="897" y="-704"/>
+            <point key="canvasLocation" x="896.94656488549617" y="-704.22535211267609"/>
         </scene>
     </scenes>
     <resources>
