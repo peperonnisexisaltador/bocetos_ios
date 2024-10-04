@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FB55AC4B2CA1BFB30028F21C /* ControladoraCita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */; };
 		FB55AC4D2CA1BFD80028F21C /* generador_de_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4C2CA1BFD80028F21C /* generador_de_citas.swift */; };
 		FB55AC4F2CA1C16F0028F21C /* cita.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC4E2CA1C16F0028F21C /* cita.swift */; };
 		FB55AC512CA1C1ED0028F21C /* Controlador_pantalla_citas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */; };
@@ -41,7 +40,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladoraCita.swift; sourceTree = "<group>"; };
 		FB55AC4C2CA1BFD80028F21C /* generador_de_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = generador_de_citas.swift; sourceTree = "<group>"; };
 		FB55AC4E2CA1C16F0028F21C /* cita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cita.swift; sourceTree = "<group>"; };
 		FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Controlador_pantalla_citas.swift; sourceTree = "<group>"; };
@@ -105,7 +103,6 @@
 		FB55AC492CA1BF530028F21C /* controlador_de_vistas */ = {
 			isa = PBXGroup;
 			children = (
-				FB55AC4A2CA1BFB30028F21C /* ControladoraCita.swift */,
 				FB55AC502CA1C1ED0028F21C /* Controlador_pantalla_citas.swift */,
 				FBF1290E2CAB02D200D19D66 /* Generador_cita.swift */,
 			);
@@ -301,7 +298,6 @@
 				FBF092BC2C9DCC9C00D441E7 /* AppDelegate.swift in Sources */,
 				FB55AC512CA1C1ED0028F21C /* Controlador_pantalla_citas.swift in Sources */,
 				FB55AC4D2CA1BFD80028F21C /* generador_de_citas.swift in Sources */,
-				FB55AC4B2CA1BFB30028F21C /* ControladoraCita.swift in Sources */,
 				FB55AC4F2CA1C16F0028F21C /* cita.swift in Sources */,
 				FBF1290F2CAB02D200D19D66 /* Generador_cita.swift in Sources */,
 				FBF092BE2C9DCC9C00D441E7 /* SceneDelegate.swift in Sources */,

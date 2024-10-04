@@ -22,21 +22,25 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view
     }
  
-    func actualizar_cantidad(){
-        labelcito.text = String(citas_disponibles.citas_creadas.count)
-    }
+  
     @IBSegueAction func al_abrir_pantalla_citas(_ coder: NSCoder) -> ControladorPantallaCitas? {
         return ControladorPantallaCitas(cita_para_citar: citas_disponibles.obtener_cita_aleatoria(), coder: coder)
     }
-    @IBAction func al_pulsar_boton (_ sender: UIButton){
-        
-    }
-    @IBAction func volver_a_pantalla_inicio (segue: UIStoryboardSegue){
-       if let pantalla_agregar_citas = segue.source as?
-                ControladorPantallaAgregarCitas{
-           citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
-        }
-        actualizar_cantidad()
-    }
     
+    @IBAction func volver_a_pantalla_inicio (segue: UIStoryboardSegue){
+        if let pantalla_agregar_citas = segue.source as?
+            ControladorPantallaAgregarCitas{
+            if pantalla_agregar_citas.cita_creada != nil {
+                citas_disponibles.agregar_cita(pantalla_agregar_citas.cita_creada!)
+                actualizar_cantidad()
+            }
+            else{
+                
+            }
+            
+        }
+    }
+    func actualizar_cantidad(){
+        labelcito.text = String(citas_disponibles.citas_creadas.count)
+    }
 }
