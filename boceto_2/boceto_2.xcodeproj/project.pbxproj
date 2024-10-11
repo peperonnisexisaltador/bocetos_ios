@@ -18,6 +18,7 @@
 		FB8F91682CB6D7BA005A55F2 /* posts.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F91672CB6D7BA005A55F2 /* posts.swift */; };
 		FB8F916C2CB6DA79005A55F2 /* ControladorPantallaPrincipalDecoleccion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F916B2CB6DA79005A55F2 /* ControladorPantallaPrincipalDecoleccion.swift */; };
 		FB8F916E2CB6DED3005A55F2 /* VistaDeZelda.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB8F916D2CB6DED3005A55F2 /* VistaDeZelda.swift */; };
+		FBB1823C2CB9850900065744 /* EstiloCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB1823B2CB9850900065744 /* EstiloCellView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		FB8F91672CB6D7BA005A55F2 /* posts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = posts.swift; sourceTree = "<group>"; };
 		FB8F916B2CB6DA79005A55F2 /* ControladorPantallaPrincipalDecoleccion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPrincipalDecoleccion.swift; sourceTree = "<group>"; };
 		FB8F916D2CB6DED3005A55F2 /* VistaDeZelda.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VistaDeZelda.swift; sourceTree = "<group>"; };
+		FBB1823B2CB9850900065744 /* EstiloCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstiloCellView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 		FB8F91692CB6D9D3005A55F2 /* Controladores_de _pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				FBB1823A2CB984BC00065744 /* estilos */,
 				FB8F916A2CB6DA03005A55F2 /* vista_de_celdas */,
 			);
 			path = "Controladores_de _pantallas";
@@ -155,6 +158,14 @@
 				FB8F916D2CB6DED3005A55F2 /* VistaDeZelda.swift */,
 			);
 			path = vista_de_celdas;
+			sourceTree = "<group>";
+		};
+		FBB1823A2CB984BC00065744 /* estilos */ = {
+			isa = PBXGroup;
+			children = (
+				FBB1823B2CB9850900065744 /* EstiloCellView.swift */,
+			);
+			path = estilos;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,6 +303,7 @@
 				FB8F91382CB6D622005A55F2 /* SceneDelegate.swift in Sources */,
 				FB8F916C2CB6DA79005A55F2 /* ControladorPantallaPrincipalDecoleccion.swift in Sources */,
 				FB8F91682CB6D7BA005A55F2 /* posts.swift in Sources */,
+				FBB1823C2CB9850900065744 /* EstiloCellView.swift in Sources */,
 				FB8F916E2CB6DED3005A55F2 /* VistaDeZelda.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
