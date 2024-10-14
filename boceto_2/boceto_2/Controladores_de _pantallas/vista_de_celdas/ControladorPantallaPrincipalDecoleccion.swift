@@ -16,7 +16,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     
     private let identificador_de_celda = "celda_pantalla_principal"
 
-    let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
+    //let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     
     @IBOutlet weak var outlet_a_la_vista: UICollectionView!
     
@@ -99,11 +99,13 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Se selecciono la celda\(indexPath)")
         
+        /*
         let pantalla_de_publicacion = storyboard?.instantiateViewController(withIdentifier: "PantallaPublicacion") as! ControladorPantallaDelPost
         
         self.navigationController?.pushViewController(pantalla_de_publicacion, animated: true)
         
         print(self.navigationController)
+         */
 
     }
 
@@ -188,44 +190,7 @@ class mod: UICollectionViewLayout{
 a*/
 
 
-extension ControladorPantallaPrincipalDeColeccion: UICollectionViewDelegateFlowLayout{
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        
-        return UIEdgeInsets(top: 5, left: 5, bottom: 5, right: 5)
-    }
-    // Method 2
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 5
-    }
-    // Method 3
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
-        
-        return 5
-    }
-    //Method 4
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let collectionViewWidth = self.collectionView.frame.width
-        let collectionViewHeight =  self.collectionView.frame.height
-        
-        let cellWidth = (collectionViewWidth) / 1.1
-        let cellHeight = cellWidth * 0.5
-        
-        return CGSize(width: cellWidth , height: cellHeight)
-        
-    }
-    
-    override func viewWillLayoutSubviews() {
-        print("REPRENDER ESTAS mmadas")
-        
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        (self.navigationController as? mod_navegador_principal)?.activar_navigation_bar(actviar: false)
 
-    }
-}
  
 
 /*
