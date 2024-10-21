@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1F738A2CC6B4D00004B6DC /* mod_navegador_principal.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F73892CC6B4D00004B6DC /* mod_navegador_principal.swift */; };
+		FB1F738C2CC6BB2C0004B6DC /* Comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1F738B2CC6BB2C0004B6DC /* Comentario.swift */; };
 		FB44DCE62CC2BBAB00B26D38 /* proveedor_de_publicaciones.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB44DCE52CC2BBAB00B26D38 /* proveedor_de_publicaciones.swift */; };
 		FB44DCE82CC2BBE500B26D38 /* Usuarios.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB44DCE72CC2BBE500B26D38 /* Usuarios.swift */; };
 		FB5891BD2CBD6F7E006878B8 /* ControladorPantallaPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5891BC2CBD6F7E006878B8 /* ControladorPantallaPost.swift */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB1F73892CC6B4D00004B6DC /* mod_navegador_principal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mod_navegador_principal.swift; sourceTree = "<group>"; };
+		FB1F738B2CC6BB2C0004B6DC /* Comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comentario.swift; sourceTree = "<group>"; };
 		FB44DCE52CC2BBAB00B26D38 /* proveedor_de_publicaciones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = proveedor_de_publicaciones.swift; sourceTree = "<group>"; };
 		FB44DCE72CC2BBE500B26D38 /* Usuarios.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuarios.swift; sourceTree = "<group>"; };
 		FB5891BC2CBD6F7E006878B8 /* ControladorPantallaPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControladorPantallaPost.swift; sourceTree = "<group>"; };
@@ -154,6 +158,7 @@
 			children = (
 				FB8F91672CB6D7BA005A55F2 /* posts.swift */,
 				FB44DCE72CC2BBE500B26D38 /* Usuarios.swift */,
+				FB1F738B2CC6BB2C0004B6DC /* Comentario.swift */,
 			);
 			path = Modelo;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				FBB1823B2CB9850900065744 /* EstiloCellView.swift */,
+				FB1F73892CC6B4D00004B6DC /* mod_navegador_principal.swift */,
 			);
 			path = estilos;
 			sourceTree = "<group>";
@@ -318,11 +324,13 @@
 			files = (
 				FB8F91362CB6D622005A55F2 /* AppDelegate.swift in Sources */,
 				FB8F91382CB6D622005A55F2 /* SceneDelegate.swift in Sources */,
+				FB1F738C2CC6BB2C0004B6DC /* Comentario.swift in Sources */,
 				FB44DCE62CC2BBAB00B26D38 /* proveedor_de_publicaciones.swift in Sources */,
 				FB8F916C2CB6DA79005A55F2 /* ControladorPantallaPrincipalDecoleccion.swift in Sources */,
 				FB8F91682CB6D7BA005A55F2 /* posts.swift in Sources */,
 				FBB1823C2CB9850900065744 /* EstiloCellView.swift in Sources */,
 				FB5891BD2CBD6F7E006878B8 /* ControladorPantallaPost.swift in Sources */,
+				FB1F738A2CC6B4D00004B6DC /* mod_navegador_principal.swift in Sources */,
 				FB44DCE82CC2BBE500B26D38 /* Usuarios.swift in Sources */,
 				FB8F916E2CB6DED3005A55F2 /* VistaDeZelda.swift in Sources */,
 			);
