@@ -12,7 +12,8 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
     
     let proveedor_publicaciones = ProveedorDePublicaciones.autoreferencia
     
-    @IBOutlet weak var titulo_de_publicacion: UILabel!
+
+    @IBOutlet weak var titulo_de_la_publicacion: UILabel!
     @IBOutlet weak var nombre_de_usuario: UILabel!
     @IBOutlet weak var cuerpo_de_publicacion: UILabel!
     @IBOutlet weak var seccion_comentarios: UICollectionView!
@@ -56,7 +57,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
                 }
             })
             
-            proveedor_publicaciones.obtener_comentarios_en_publicacion(id: publicacion!.id, que_hacer_al_recibir: {
+            proveedor_publicaciones.obtener_cmentarios_en_publicaciones(id: publicacion!.id, que_hacer_al_recibir: {
                 [weak self] (comentarios_descargados) in self?.lista_comentarios = comentarios_descargados
                 DispatchQueue.main.async {
                     self?.seccion_comentarios.reloadData()
@@ -73,7 +74,7 @@ class ControladorPantallaDelPost: UIViewController, UICollectionViewDataSource{
             return
         }
         
-        titulo_de_publicacion.text = publicacion_actual.title
+        titulo_de_la_publicacion.text = publicacion_actual.title
         cuerpo_de_publicacion.text = publicacion_actual.body
         
     }

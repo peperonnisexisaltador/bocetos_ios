@@ -9,7 +9,7 @@ struct Publicacion: Codable {
     // Encodable: Permite convertir un modelo de siwft a JSON
     // Codable: Ambas al mismo tiempo
     var id: Int
-    var userid: Int
+    var userId: Int
     var title: String
     var body: String
 }
