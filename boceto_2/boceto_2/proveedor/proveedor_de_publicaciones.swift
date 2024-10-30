@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 class ProveedorDePublicaciones{
-    let url_de_publicaciones = "https://jsonplaceholder.typicode.com/posts"
+    let url_de_publicaciones = "https://jsonplaceholder.typicode.com/"
     var  lista_de_publicaciones: [Publicacion] = []
     
     /*

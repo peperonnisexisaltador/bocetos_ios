@@ -24,6 +24,7 @@ class ControladorPantallaPrincipalDeColeccion: UICollectionViewController{
         proveedor_publicaciones.obtener_publicaicones{
             [weak self] (publicaciones) in self?.lista_de_publicaciones = publicaciones
             DispatchQueue.main.async {
+                print("Aqui sucedio algo")
                 self?.collectionView.reloadData()
             }
         }
