@@ -22,6 +22,16 @@ class Modelo {
             if error != nil || data == nil {
                 return
             }
+            do{
+                let decoder = JSONDecoder()
+                decoder.dateDecodingStrategy = .iso8601
+                
+               let respuesta = try decoder.decode(Respuesta.self, from: data!)
+                dump(response)
+            }
+            catch{
+                
+            }
             
         }
         
