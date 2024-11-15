@@ -6,7 +6,14 @@
 //
 
 import Foundation
+protocol ModeloDelegate{
+    func VideosAtrapados(_ videos: [Video])
+    
+}
 class Modelo {
+   
+    var delegate: ModeloDelegate?
+    
     func obtenerVideos (){
         
         let url = URL (string: Constantes.URL_API)
@@ -27,7 +34,17 @@ class Modelo {
                 decoder.dateDecodingStrategy = .iso8601
                 
                let respuesta = try decoder.decode(Respuesta.self, from: data!)
-                dump(response)
+                
+                if respuesta.items != nil {
+                    
+                    DispatchQueue.main.async {
+                        
+                        self.delegate?.VideosAtrapados(respuesta.items!)
+                        dump(response)
+                    }
+                    
+                }
+                
             }
             catch{
                 
