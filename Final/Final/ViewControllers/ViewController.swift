@@ -7,7 +7,8 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, ModeloDelegate {
+
+class ControladorYoutube: UIViewController, UITableViewDataSource, UITableViewDelegate, ModeloDelegate {
    
     
 
@@ -44,11 +45,11 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let celda = tableView.dequeueReusableCell(withIdentifier: Constantes.CELDAVIDEO_ID, for: indexPath)
+        let celda = tableView.dequeueReusableCell(withIdentifier: Constantes.CELDAVIDEO_ID, for: indexPath) as!VideoTableViewCell
        
-        let titulo = self.videos[indexPath.row].titulo
+        let video = self.videos[indexPath.row]
         
-        celda.textLabel?.text = titulo
+        celda.setCell(v: video)
         
         return celda
         

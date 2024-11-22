@@ -40,7 +40,7 @@ class Modelo {
                     DispatchQueue.main.async {
                         
                         self.delegate?.VideosAtrapados(respuesta.items!)
-                        dump(response)
+                        dump(respuesta)
                     }
                     
                 }
